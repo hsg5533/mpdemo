@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>찾아보기</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_area">
+        <nav id="gnb">
+          <div class="gnb_container">
+            <a class="go_back" href="index.html"></a>
+            <div class="gnb_title"><h2>찾아보기</h2></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="search_box">
+        <div class="search_box sub_search_box">
+          <a href="search.html">
+            <form class="keyword_search sub_search">
+              <input
+                type="text"
+                placeholder="고등어"
+                required
+                value
+                style="font-size: 18px; border: none"
+              />
+            </form>
+          </a>
+        </div>
+      </section>
+      <div class="search_list pb_60">
+        <div class="product_wrap">
+          <div class="product_item">
+            <a class="prod_img_wrap" href="sub_store_detail.html">
+              <img src="img/product/search_01.png" alt="세일중상품"
+            /></a>
+            <a class="prod_txt_wrap" href="sub_store_detail.html">
+              <div class="prod_txt">
+                <h3>영동이네 수산</h3>
+                <!-- 검색어 -->
+                <p>#고등어</p>
+                <!-- 주소 -->
+                <span>복지로 41번길 45</span>
+              </div>
+            </a>
+            <button
+              type="button"
+              onclick="location.href='sub_map_location.html'"
+              class="prod_location"
+            >
+              <img src="img/icon/icon_location.svg" alt="위치정보" />
+              <span><em>위치</em></span>
+            </button>
+          </div>
+        </div>
+        <div class="product_wrap">
+          <div class="product_item">
+            <a class="prod_img_wrap" href="sub_store_detail.html">
+              <img src="img/product/search_02.png" alt="세일중상품"
+            /></a>
+            <a class="prod_txt_wrap" href="sub_store_detail.html">
+              <div class="prod_txt">
+                <h3>동원 수산</h3>
+                <!-- 검색어 -->
+                <p>#고등어</p>
+                <!-- 주소 -->
+                <span>복지로 45번길 11</span>
+              </div>
+            </a>
+            <button
+              type="button"
+              onclick="location.href='sub_map_location.html'"
+              class="prod_location"
+            >
+              <img src="img/icon/icon_location.svg" alt="위치정보" />
+              <span><em>위치</em></span>
+            </button>
+          </div>
+        </div>
+        <div class="product_wrap">
+          <div class="product_item">
+            <a class="prod_img_wrap" href="sub_store_detail.html">
+              <img src="img/product/search_03.png" alt="세일중상품"
+            /></a>
+            <a class="prod_txt_wrap" href="sub_store_detail.html">
+              <div class="prod_txt">
+                <h3>해수상회</h3>
+                <!-- 검색어 -->
+                <p>#고등어</p>
+                <!-- 주소 -->
+                <span>부전호 152번길23-1</span>
+              </div>
+            </a>
+            <button
+              type="button"
+              onclick="location.href='sub_map_location.html'"
+              class="prod_location"
+            >
+              <img src="img/icon/icon_location.svg" alt="위치정보" />
+              <span><em>위치</em></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside id="dock">
+      <div class="dock_container">
+        <nav class="dock_menu">
+          <a href="index.html">
+            <i class="home"></i>
+            <span class="dock_label">홈</span>
+          </a>
+          <a href="dock_map.html">
+            <i class="map"></i>
+            <span class="dock_label">시장 약도</span>
+          </a>
+          <a href="dock_cart.html">
+            <i class="cart"></i>
+            <i class="cart_count">3</i>
+            <span class="dock_label">장바구니</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+  </body>
+</html>

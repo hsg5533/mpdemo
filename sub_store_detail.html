@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>가게 상세</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_area">
+        <nav id="gnb">
+          <div class="gnb_sub_container">
+            <div class="gnb_title"></div>
+            <button
+              class="sub_store_info_close"
+              type="button"
+              onclick="history.back();"
+            >
+              <img src="img/icon/btn_x_light.svg" alt="닫기 버튼" />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="store_detail_wrap">
+          <div class="store_detail">
+            <div class="store_detail_title">
+              <h2>영동이네 수산</h2>
+              <p>사장님이 직접잡은 수산물을 판매합니다.</p>
+            </div>
+            <div class="store_contact">
+              <ul>
+                <li>
+                  <a href="#"><i class="store_call"></i><span>전화</span></a>
+                </li>
+                <span class="store_line"></span>
+                <li>
+                  <a href="#"><i class="store_share"></i><span>공유</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="close_btn">
+              <button type="button" onclick="history.back();">닫기</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="tab_wrap store_tab_wrap">
+          <div class="tab_bar">
+            <ul class="tab">
+              <li class="on" data-tab="menu_01">
+                <a class="on" href="#">세일중</a>
+              </li>
+              <li data-tab="menu_02"><a href="#">업소 정보</a></li>
+              <li data-tab="menu_03"><a href="#">판매 품목 </a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="menu_01" class="tabcont on pb_45 pt_180">
+          <div class="product_list_wrap">
+            <div class="product_list">
+              <div class="product_item_wrap">
+                <div class="product_item">
+                  <div class="product_price">
+                    <div class="txt_wrap">
+                      <h3><b>고등어</b></h3>
+                      <p class="origin">국내산</p>
+                    </div>
+                    <div class="price_wrap">
+                      <span class="unit">한 마리 : </span>
+                      <div class="price">
+                        <span class="retail_price price_line">4,000원</span>
+                        <span class="selling_price"><em>3,000원</em></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_img">
+                    <img
+                      class="prod_img"
+                      src="img/product/main_prod_01.png"
+                      alt="판매상품 이미지"
+                    />
+                    <img
+                      class="discount_icon"
+                      src="img/icon/icon_sub_label_discount.svg"
+                      alt="세일중 아이콘"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu_02" class="tabcont pb_45 pt_180">
+          <div class="store_info_wrap">
+            <div class="store_info">
+              <div class="store_info_map">
+                <img src="img/map_market.png" alt="업소 지도" />
+                <div class="tag_wrap">
+                  <div class="name_tag"><span>영동이네 수산</span></div>
+                </div>
+              </div>
+              <div class="store_info_txt">
+                <div>
+                  <p>운영시간</p>
+                  <span>8시~ 18시</span>
+                </div>
+                <div>
+                  <p>휴무일</p>
+                  <span>없음</span>
+                </div>
+                <div>
+                  <p>전화번호</p>
+                  <span>051-333-3333</span>
+                </div>
+                <div>
+                  <p>주소</p>
+                  <span>행복시 행복구 행복동 77-7, 1층</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu_03" class="tabcont pb_45 pt_180">
+          <div class="product_list_wrap">
+            <div class="product_list">
+              <div class="product_item_wrap">
+                <div class="product_item">
+                  <div class="product_price">
+                    <div class="txt_wrap">
+                      <h3><b>고등어</b></h3>
+                      <p class="origin">국내산</p>
+                    </div>
+                    <div class="price_wrap">
+                      <span class="unit">한 마리 : </span>
+                      <div class="price">
+                        <span class="retail_price price_line">4,000원</span>
+                        <span class="selling_price"><em>3,000원</em></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_img">
+                    <img
+                      class="prod_img"
+                      src="img/product/main_prod_01.png"
+                      alt="판매상품 이미지"
+                    />
+                    <img
+                      class="discount_icon"
+                      src="img/icon/icon_sub_label_discount.svg"
+                      alt="세일중 아이콘"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_wrap">
+                <div class="product_item">
+                  <div class="product_price">
+                    <div class="txt_wrap">
+                      <h3><b>갈치</b></h3>
+                      <p class="origin">국내산</p>
+                    </div>
+                    <div class="price_wrap">
+                      <span class="unit">한 마리 : </span>
+                      <div class="price">
+                        <span class="selling_price">3,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_img">
+                    <img
+                      class="prod_img"
+                      src="img/product/main_prod_02.png"
+                      alt="판매상품 이미지"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_wrap">
+                <div class="product_item">
+                  <div class="product_price">
+                    <div class="txt_wrap">
+                      <h3><b>꽁치</b></h3>
+                      <p class="origin">국내산</p>
+                    </div>
+                    <div class="price_wrap">
+                      <span class="unit">한 마리 : </span>
+                      <div class="price">
+                        <span class="selling_price">3,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_img">
+                    <img
+                      class="prod_img"
+                      src="img/product/main_prod_03.png"
+                      alt="판매상품 이미지"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_wrap">
+                <div class="product_item">
+                  <div class="product_price">
+                    <div class="txt_wrap">
+                      <h3><b>도미</b></h3>
+                      <p class="origin">국내산</p>
+                    </div>
+                    <div class="price_wrap">
+                      <span class="unit">한 마리 : </span>
+                      <div class="price">
+                        <span class="selling_price">8,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_img">
+                    <img
+                      class="prod_img"
+                      src="img/product/main_prod_04.png"
+                      alt="판매상품 이미지"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_wrap">
+                <div class="product_item">
+                  <div class="product_price">
+                    <div class="txt_wrap">
+                      <h3><b>민어</b></h3>
+                      <p class="origin">국내산</p>
+                    </div>
+                    <div class="price_wrap">
+                      <span class="unit">한 마리 : </span>
+                      <div class="price">
+                        <span class="selling_price">8,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_img">
+                    <img
+                      class="prod_img"
+                      src="img/product/img_none.svg"
+                      alt="판매상품 이미지"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_wrap">
+                <div class="product_item">
+                  <div class="product_price">
+                    <div class="txt_wrap">
+                      <h3><b>조기</b></h3>
+                      <p class="origin">국내산</p>
+                    </div>
+                    <div class="price_wrap">
+                      <span class="unit">한 마리 : </span>
+                      <div class="price">
+                        <span class="selling_price">3,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_img">
+                    <img
+                      class="prod_img"
+                      src="img/product/img_none.svg"
+                      alt="판매상품 이미지"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="product_item_wrap">
+                <div class="product_item">
+                  <div class="product_price">
+                    <div class="txt_wrap">
+                      <h3><b>삼치</b></h3>
+                      <p class="origin">국내산</p>
+                    </div>
+                    <div class="price_wrap">
+                      <span class="unit">한 마리 : </span>
+                      <div class="price">
+                        <span class="selling_price">7,000원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_img">
+                    <img
+                      class="prod_img"
+                      src="img/product/img_none.svg"
+                      alt="판매상품 이미지"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

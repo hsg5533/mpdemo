@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>행복수산</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body class="bg_bg3">
+    <div class="dimm"></div>
+    <div class="modal">
+      <div class="modal_head_wrap">
+        <div class="modal_head">
+          <h2>공유하기</h2>
+          <button type="button" class="close">
+            <img src="img/icon/btn_x_light.svg" alt="닫기 버튼" />
+          </button>
+        </div>
+      </div>
+      <div class="share_icon_wrap">
+        <div class="share_icon">
+          <button class="share_kakao">
+            <img src="img/icon/icon_share_kakao.svg" alt="카카오톡 공유하기" />
+            <p>카카오톡</p>
+          </button>
+          <button class="share_sms">
+            <img src="img/icon/icon_share_sms.svg" alt="문자 공유하기" />
+            <p>문자</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <header class="header_area">
+      <nav id="gnb" class="main_gnb">
+        <a href="index.html" class="logo"
+          ><h1><b>행복수산</b></h1></a
+        >
+        <button type="button" class="share"></button>
+      </nav>
+    </header>
+    <main class="mt_68 bg_bg3">
+      <section id="main_product">
+        <div class="main_product">
+          <ul>
+            <li class="main_img_list">
+              <a href="products.html">
+                <img
+                  class="main_discount_icon"
+                  src="img/icon/icon_main_label_discount.svg"
+                  alt="할인상품라벨"
+                />
+                <img
+                  class="main_img"
+                  src="img/product/main_prod_01.png"
+                  alt="메인상품1번"
+                />
+                <span class="main_img_bg"></span>
+                <p class="main_img_name">고등어</p>
+              </a>
+            </li>
+            <li class="main_img_list">
+              <a href="products.html">
+                <img src="img/product/main_prod_02.png" alt="메인상품2번" />
+                <span class="main_img_bg"></span>
+                <p class="main_img_name">갈치</p>
+              </a>
+            </li>
+            <li class="main_img_list">
+              <a href="products.html">
+                <img src="img/product/main_prod_03.png" alt="메인상품2번" />
+                <span class="main_img_bg"></span>
+                <p class="main_img_name">꽁치</p>
+              </a>
+            </li>
+            <li class="main_img_list">
+              <a href="products.html">
+                <img src="img/product/main_prod_04.png" alt="메인상품2번" />
+                <span class="main_img_bg"></span>
+                <p class="main_img_name">도미</p>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="main_img_list">
+              <a href="products.html">
+                <img
+                  class="img_box1"
+                  src="img/main_prod_txt.svg"
+                  alt="메인상품5번"
+                />
+                <p class="main_img_txt">민어</p>
+              </a>
+            </li>
+            <li class="main_img_list">
+              <a href="products.html">
+                <img
+                  class="img_box1"
+                  src="img/main_prod_txt.svg"
+                  alt="메인상품6번"
+                />
+                <p class="main_img_txt">조기</p>
+              </a>
+            </li>
+            <li class="main_img_list">
+              <a href="products.html">
+                <img
+                  class="img_box1"
+                  src="img/main_prod_txt.svg"
+                  alt="메인상품7번"
+                />
+                <p class="main_img_txt">삼치</p>
+              </a>
+            </li>
+            <li class="main_img_list">
+              <a href="products.html">
+                <img
+                  class="img_box1"
+                  src="img/main_prod_bg.svg"
+                  alt="상품 더 보기"
+                />
+                <p class="main_img_txt">+<br />더 보기</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="main_title">
+        <div class="tm_title">
+          <ul>
+            <li><div class="line_01"></div></li>
+            <li>
+              <div class="title_txt">행복시장 <b>판매품목</b></div>
+            </li>
+            <li><div class="line_02"></div></li>
+          </ul>
+        </div>
+      </section>
+      <section id="search_box">
+        <div class="container search_box">
+          <a href="search.html">
+            <form class="keyword_search">
+              <input
+                type="text"
+                placeholder="상품 또는 상호를 찾아보세요"
+                required
+                value
+                style="font-size: 16px; border: none"
+              />
+            </form>
+          </a>
+        </div>
+      </section>
+      <section class="main_category">
+        <div class="main_category_link">
+          <ul class="link_wrap01">
+            <li>
+              <a href="#"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_01.svg"
+                  alt="메인카테고리 정육"
+                />
+                <p>정육</p></a
+              >
+            </li>
+            <li>
+              <a href="sale_items.html"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_02.svg"
+                  alt="메인카테고리 수산"
+                />
+                <p>수산</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_03.svg"
+                  alt="메인카테고리 민물"
+                />
+                <p>민물</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_04.svg"
+                  alt="메인카테고리 채소"
+                />
+                <p>채소</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_05.svg"
+                  alt="메인카테고리 과일"
+                />
+                <p>과일</p></a
+              >
+            </li>
+          </ul>
+          <ul class="link_wrap02">
+            <li>
+              <a href="#"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_06.svg"
+                  alt="메인카테고리 먹거리·반찬"
+                />
+                <p class="txt_ml">먹거리·반찬</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_07.svg"
+                  alt="메인카테고리 식당"
+                />
+                <p>식당</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_08.svg"
+                  alt="메인카테고리 건어물"
+                />
+                <p>건어물</p></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_09.svg"
+                  alt="메인 카테고리 기타"
+                />
+                <p>기타</p></a
+              >
+            </li>
+            <li>
+              <a href="discount.html"
+                ><img
+                  class="category_img"
+                  src="img/icon/icon_main_menu_10.svg"
+                  alt=""
+                />
+                <p>세일중</p></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="main_bn">
+        <div class="bn_01">
+          <a href="recommend.html"
+            ><img src="img/main_bn_01.png" alt="메인배너1번"
+          /></a>
+        </div>
+        <div class="bn_02">
+          <a href="manual.html"
+            ><img src="img/main_bn_02.png" alt="메인배너2번"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <aside id="dock">
+      <div class="dock_container">
+        <nav class="dock_menu">
+          <a href="index.html" class="active">
+            <i class="home"></i>
+            <span class="dock_label">홈</span>
+          </a>
+          <a href="dock_map.html">
+            <i class="map"></i>
+            <span class="dock_label">시장 약도</span>
+          </a>
+          <a href="dock_cart.html">
+            <i class="cart"></i>
+            <i class="cart_count">3</i>
+            <span class="dock_label">장바구니</span>
+          </a>
+          <a href="#">
+            <i class="app"></i>
+            <span class="dock_label">앱 다운로드</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+  </body>
+</html>
