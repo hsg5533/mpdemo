@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>장바구니</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_area">
+        <div id="gnb">
+          <div class="gnb_container">
+            <a class="go_back" href="index.html"></a>
+            <h2>장바구니</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="top_sort">
+        <span>전체 <em>3</em> 개</span>
+        <button class="cart_all_delete" type="button">전체삭제</button>
+      </div>
+      <div class="cart_list">
+        <div class="product_wrap">
+          <div class="product_item">
+            <div class="item_img">
+              <img src="img/product/cart_01.png" alt="세일중상품" />
+              <span class="img_count">10</span>
+            </div>
+            <div class="prod_txt">
+              <!-- 가게명 -->
+              <h3>동우수산</h3>
+              <!-- 상품명 -->
+              <p>뿔소라</p>
+              <!-- 단위및가격 -->
+              <span>1 kg : 10,000원</span>
+              <!-- <span>1kg : 10,000원</span> -->
+            </div>
+            <button type="button">
+              <img
+                class="delete"
+                src="img/icon/btn_x_light.svg"
+                alt="장바구니 물건 삭제"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="product_wrap">
+          <div class="product_item">
+            <div class="item_img">
+              <img src="img/product/cart_02.png" alt="세일중상품" />
+            </div>
+            <div class="prod_txt">
+              <!-- 가게명 -->
+              <h3>춘천닭집</h3>
+              <!-- 상품명 -->
+              <p>후라이드 치킨</p>
+              <!-- 단위및가격 -->
+              <span>1 마리 : 10,000원</span>
+              <!-- <span>1마리 : 10,000원</span> -->
+            </div>
+            <button type="button">
+              <img
+                class="delete"
+                src="img/icon/btn_x_light.svg"
+                alt="장바구니 물건 삭제"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="product_wrap">
+          <div class="product_item">
+            <div class="item_img">
+              <img src="img/product/cart_03.png" alt="세일중상품" />
+              <img
+                class="discount_icon"
+                src="img/icon/icon_sub_label_discount.svg"
+                alt="세일중 아이콘"
+              />
+              <span class="img_count">3</span>
+            </div>
+            <div class="prod_txt">
+              <!-- 가게명 -->
+              <h3>소영이네 채소마을</h3>
+              <!-- 상품명 -->
+              <p>레몬</p>
+              <!-- 단위및가격 -->
+              <div class="price_wrap">
+                <span class="unit">1 개 : </span>
+                <!-- <div class="price"> -->
+                <span class="retail_price price_line">1,500원</span>&nbsp;
+                <span class="selling_price"><em>1,000원</em></span>
+                <!-- </div> -->
+              </div>
+            </div>
+            <button type="button">
+              <img
+                class="delete"
+                src="img/icon/btn_x_light.svg"
+                alt="장바구니 물건 삭제"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="product_total_wrap">
+          <div class="product_total">
+            <div class="total_count">
+              <span>3 개 상품</span>
+              <span>총 <em>4</em> 개</span>
+            </div>
+            <div class="total_price">
+              <span>합계 &nbsp;&nbsp;<em>29,000원</em></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="btn_order"
+        onclick="location.href='order.html'"
+        type="button"
+      >
+        <strong>29,000원</strong> 주문하기
+      </button>
+    </main>
+    <aside id="dock">
+      <div class="dock_container">
+        <nav class="dock_menu">
+          <a href="index.html">
+            <i class="home"></i>
+            <span class="dock_label">홈</span>
+          </a>
+          <a href="dock_map.html">
+            <i class="map"></i>
+            <span class="dock_label">시장 약도</span>
+          </a>
+          <a href="dock_cart.html" class="active">
+            <i class="cart"></i>
+            <i class="cart_count">3</i>
+            <span class="dock_label">장바구니</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+  </body>
+</html>

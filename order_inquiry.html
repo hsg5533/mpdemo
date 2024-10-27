@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>주문서 내역 조회</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_area">
+        <div id="gnb">
+          <div class="gnb_container">
+            <a class="go_back" href="#" onClick="history.back();"></a>
+            <h2>주문 내역 조회</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="order_sheet">
+        <div class="product_info">
+          <h3 class="order_tit">주문 조회</h3>
+        </div>
+        <div class="order_inquiry_box">
+          <div class="order_inquiry_txt">
+            메일로 발송해 드린 주문서의 주문번호 및 주문 시 입력하신 비밀번호를
+            정확히 입력해 주십시오.
+          </div>
+          <div class="order_inquiry_cont">
+            <div class="order_box">
+              <div class="order_cont">
+                <p>주문서 번호 <em>*</em></p>
+                <div><input type="text" /></div>
+              </div>
+              <div class="order_cont">
+                <p>비밀번호 <em>*</em></p>
+                <div><input type="password" /></div>
+              </div>
+            </div>
+            <div><a href="order_detail.html" class="btn_inquiry">확인</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

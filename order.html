@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>주문서 작성</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_area">
+        <div id="gnb">
+          <div class="gnb_container">
+            <a class="go_back" href="#" onClick="history.back();"></a>
+            <h2>주문서 작성</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="order_sheet">
+        <div class="product_info">
+          <h3 class="order_tit">주문상품</h3>
+          <div class="order_box">
+            <ul>
+              <li>
+                <p>참기름</p>
+                <span>36,800원 X 1</span>
+              </li>
+              <li>
+                <p>조선 된장</p>
+                <span>12,600원 X 2</span>
+              </li>
+            </ul>
+            <div>
+              <p>
+                총 상품금액&nbsp;&nbsp;<span class="product_amount"
+                  >62,000원</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="orderer">
+          <h3 class="order_tit">주문하시는 분</h3>
+          <div class="order_box">
+            <div class="order_cont">
+              <p>이름 <em>*</em></p>
+              <div><input type="text" /></div>
+            </div>
+            <div class="order_cont">
+              <p>
+                비밀번호&nbsp;<em>*</em
+                ><span class="pw_cont"
+                  >영문,숫자 3~20자(주문서 조회 시 필요)</span
+                >
+              </p>
+              <div><input type="text" /></div>
+            </div>
+            <div class="order_cont">
+              <p>휴대폰 번호 <em>*</em></p>
+              <div><input type="tel" /></div>
+            </div>
+            <div class="order_cont">
+              <p>전화번호</p>
+              <div><input type="tel" /></div>
+            </div>
+            <div class="order_cont">
+              <p>주소 <em>*</em></p>
+              <ul class="order_address">
+                <li class="btn_address">
+                  <input type="text" />
+                  <button type="button">주소 검색</button>
+                </li>
+                <li>
+                  <input type="text" />
+                </li>
+                <li>
+                  <input type="text" placeholder="상세주소를 입력해주세요" />
+                </li>
+              </ul>
+            </div>
+            <div class="order_cont">
+              <p>이메일 주소 <em>*</em></p>
+              <div><input type="email" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="deliver">
+          <h3 class="order_tit">받으시는 분</h3>
+          <div class="order_box">
+            <div class="same_orderer">
+              <img src="img/icon/icon_check_ch.svg" alt="체크" /><span
+                >주문자와 동일</span
+              >
+            </div>
+            <div class="order_cont">
+              <p>이름 <em>*</em></p>
+              <div><input type="text" /></div>
+            </div>
+            <div class="order_cont">
+              <p>전화번호 <em>*</em></p>
+              <div><input type="password" /></div>
+            </div>
+            <div class="order_cont">
+              <p>주소 <em>*</em></p>
+              <ul class="order_address">
+                <li class="btn_address">
+                  <input type="text" />
+                  <button type="button">주소 검색</button>
+                </li>
+                <li>
+                  <input type="text" />
+                </li>
+                <li>
+                  <input type="text" placeholder="상세주소를 입력해주세요" />
+                </li>
+              </ul>
+            </div>
+            <div class="order_cont">
+              <p>전하실 말씀</p>
+              <div><input type="text" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="price_sum">
+          <h3 class="order_tit">결제 정보</h3>
+          <div>
+            <p>총 결제 금액</p>
+            <p>49,400원</p>
+          </div>
+        </div>
+        <div class="payment_info">
+          <h3 class="order_tit">결제 수단</h3>
+          <ul>
+            <li>
+              <img src="img/icon/icon_radio_checked.svg" alt="체크" /><span
+                >실시간 계좌이체</span
+              >
+            </li>
+            <li>
+              <img src="img/icon/icon_radio_unchecked.svg" alt="미체크" /><span
+                >신용카드</span
+              >
+            </li>
+            <li>
+              <img src="img/icon/icon_radio_unchecked.svg" alt="미체크" /><span
+                >제로페이</span
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="btn_payment"
+          onclick="location.href='order_inquiry.html';"
+        >
+          <strong>62,000원</strong> 결제하기
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
